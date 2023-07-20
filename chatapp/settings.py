@@ -27,6 +27,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LOGIN_URL = 'login'
+LOGOUT_URL = 'logout'
+
+LOGOUT_REDIRECT_URL = '/chat/'
+LOGIN_REDIRECT_URL = '/rooms/'
+
 
 # Application definition
 
