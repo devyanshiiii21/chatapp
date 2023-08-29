@@ -26,3 +26,6 @@ application = ProtocolTypeRouter({
         )
     )
 })
+
+# For vercel config
+app = application
