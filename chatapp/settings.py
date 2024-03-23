@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-2tbek&j-6sykdtjss73bjd4jjrrp*ip=#5ft^q8y5c)*bnf$oz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [".vercel.app", ".now.sh"]
+ALLOWED_HOSTS = ["127.0.0.1"]
 
 
 LOGIN_URL = 'login'
@@ -85,12 +85,12 @@ ASGI_APPLICATION = "chatapp.asgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 
 # Password validation
@@ -140,5 +140,5 @@ CHANNEL_LAYERS = {
     }
 }
 
-STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles", "static")
+# STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+# STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles", "static")
